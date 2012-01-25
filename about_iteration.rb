@@ -4,6 +4,7 @@ class AboutIteration < EdgeCase::Koan
 
   def test_each_is_a_method_on_arrays
     assert_equal false,[].methods.include?("each")
+    assert_equal true,[].methods.include?(:each)
   end
 
   def test_iterating_with_each
